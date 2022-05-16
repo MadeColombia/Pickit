@@ -1317,3 +1317,180 @@ Received Import Request.
 Start importing Assets/Scripts/Components/platoR.prefab using Guid(b9aae31896a4f8a40a5041a91c86b81c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b841f62b698fb64ac88b334c7970295') in 0.183146 seconds 
   Import took 0.193089 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 965.614371 seconds.
+  path: Assets/Scripts/Components/plasticBottle.prefab
+  artifactKey: Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Components/plasticBottle.prefab using Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa65dae224c9ae36af7a5feeb3e30cc7') in 0.062578 seconds 
+  Import took 0.072280 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 993.397249 seconds.
+  path: Assets/Scripts/Components/plasticBottle.prefab
+  artifactKey: Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Components/plasticBottle.prefab using Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28936c73705507af8a849640e326f827') in 0.046889 seconds 
+  Import took 0.056394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.892468 seconds.
+  path: Assets/Scripts/Components/plasticBottle.prefab
+  artifactKey: Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Components/plasticBottle.prefab using Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba3938d4a9658a03c955ac7bbd0b371d') in 0.035039 seconds 
+  Import took 0.043180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.766096 seconds.
+  path: Assets/Scripts/Components/plasticBottle.prefab
+  artifactKey: Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Components/plasticBottle.prefab using Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd23a9595a367b5949244a7d783c6033') in 0.034250 seconds 
+  Import took 0.043247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1311.956524 seconds.
+  path: Assets/Scripts/Components/plasticBottle.prefab
+  artifactKey: Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Components/plasticBottle.prefab using Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '154a4208b073d00131db2a05736a908e') in 0.038541 seconds 
+  Import took 0.049854 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 388.555667 seconds.
+  path: Assets/Scripts/Components/plasticBottle.prefab
+  artifactKey: Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Components/plasticBottle.prefab using Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a3722726073d57cc99eb1c4b2f11fc6') in 0.031401 seconds 
+  Import took 0.042241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 286.284446 seconds.
+  path: Assets/Scripts/Components/plasticBottle.prefab
+  artifactKey: Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Components/plasticBottle.prefab using Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bf57ed5384aadbc5af9dd3e473ad8ad') in 0.032726 seconds 
+  Import took 0.045017 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.012731 seconds.
+  path: Assets/Scripts/Components/plasticBottle.prefab
+  artifactKey: Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Components/plasticBottle.prefab using Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d4d04742783b3169b09f0b3a823b718') in 0.031915 seconds 
+  Import took 0.043349 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.508904 seconds.
+  path: Assets/Scripts/Components/plasticBottle.prefab
+  artifactKey: Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Components/plasticBottle.prefab using Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9069a1d92d4c46be98e17c8b60ca265') in 0.033656 seconds 
+  Import took 0.044382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.779104 seconds.
+  path: Assets/Scripts/Components/plasticBottle.prefab
+  artifactKey: Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Components/plasticBottle.prefab using Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83096d16ff55b148cd347f9682d2ffb5') in 0.027759 seconds 
+  Import took 0.041078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.039367 seconds.
+  path: Assets/Scripts/Components/plasticBottle.prefab
+  artifactKey: Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Components/plasticBottle.prefab using Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '399bcdf06e466ad0933a2c3360418d3e') in 0.030075 seconds 
+  Import took 0.042011 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.472593 seconds.
+  path: Assets/Scripts/Components/plasticBottle.prefab
+  artifactKey: Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Components/plasticBottle.prefab using Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbfdcbabe11309f3af4c83d6ec734b49') in 0.029660 seconds 
+  Import took 0.040815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.044328 seconds.
+  path: Assets/Scripts/Components/plasticBottle.prefab
+  artifactKey: Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Components/plasticBottle.prefab using Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aadc3d6660c82e183adf22cf6a8d49e') in 0.035440 seconds 
+  Import took 0.047370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.646514 seconds.
+  path: Assets/Scripts/Components/plasticBottle.prefab
+  artifactKey: Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Components/plasticBottle.prefab using Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6105f8b4b7529598c1dfb03d71851e2b') in 0.031970 seconds 
+  Import took 0.046217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.038525 seconds.
+  path: Assets/Scripts/Components/plasticBottle.prefab
+  artifactKey: Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Components/plasticBottle.prefab using Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22c8b2171a76b6115af8ba11429cb406') in 0.032570 seconds 
+  Import took 0.046263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.077736 seconds.
+  path: Assets/Scripts/Components/plasticBottle.prefab
+  artifactKey: Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Components/plasticBottle.prefab using Guid(30cb5ccdbd21489479a1b32a722d91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f1a40120ef4af9e7b0b1c38e9893b6e') in 0.027924 seconds 
+  Import took 0.039071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1484.074567 seconds.
+  path: Assets/Scenes/MAPA.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MAPA.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26a1866856088b9e86cae60a5554eea0') in 0.006491 seconds 
+  Import took 0.018872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.461228 seconds.
+  path: Assets/Scenes/MAPA 1.unity
+  artifactKey: Guid(aa5e3a8fc272ee245941baa55daa0ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MAPA 1.unity using Guid(aa5e3a8fc272ee245941baa55daa0ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6fa9075d9d45efcb1cca2a623af60f1') in 0.006705 seconds 
+  Import took 0.055840 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.900807 seconds.
+  path: Assets/Scenes/MAPA.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MAPA.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8c21aa5fb1a5c50ea83bb5d491f41ca') in 0.005898 seconds 
+  Import took 0.016021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 167.092179 seconds.
+  path: Assets/Scripts/MonoBehaviours/CamaraPlayer.cs
+  artifactKey: Guid(2447d0fc818d19846b0f2fcd4effa639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MonoBehaviours/CamaraPlayer.cs using Guid(2447d0fc818d19846b0f2fcd4effa639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27b75f36aeec1d3e4a79f9130f341d72') in 0.015461 seconds 
+  Import took 1.303933 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.770674 seconds.
+  path: Assets/Scripts/MonoBehaviours/CountdownTimer.cs
+  artifactKey: Guid(73c9bff7b1eb6ee45b0e167e21c29c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MonoBehaviours/CountdownTimer.cs using Guid(73c9bff7b1eb6ee45b0e167e21c29c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68e481873b92e7b4ebf85c3458e15aa4') in 0.005450 seconds 
+  Import took 0.020531 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 68.900442 seconds.
+  path: Assets/Objects/JUGADOR/Codigo/AndroidController.cs
+  artifactKey: Guid(e05a878e4e928d04dbb24a1704367e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/JUGADOR/Codigo/AndroidController.cs using Guid(e05a878e4e928d04dbb24a1704367e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '509f31678a9dc2876355cff79d591779') in 0.005158 seconds 
+  Import took 0.017217 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
