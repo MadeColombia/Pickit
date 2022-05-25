@@ -13,6 +13,7 @@ public class AndroidController : MonoBehaviour
     private Animator animacion;
     public float x, z, y;
     Vector3 move;
+    private Vector3 forceDirection = Vector3.zero;
 
     public Rigidbody rb;
 
@@ -38,7 +39,7 @@ public class AndroidController : MonoBehaviour
         move = player.right * x + player.forward * z;
         controller.Move(move * velMovimiento * Time.deltaTime);
 
-        transform.Rotate(0, x * Time.deltaTime * velRotacion, 0);
+        transform.Rotate(0, x * Time.deltaTime * velRotacion, 0); //Rotacion con joystick esto es lo que estorba
         transform.Translate(0, 0, z * Time.deltaTime * velMovimiento);
         
         animacion.SetFloat("velX", x);
@@ -51,30 +52,21 @@ public class AndroidController : MonoBehaviour
         }
     }
 
-    void Drop()
+    /*private void LookAt()
     {
-        //Esta afectando directamente al jugador requiere analisis
-        //Boton de tomar
-        if (!Tomar)
-        {
-            transform.Rotate(0, x * Time.deltaTime * velRotacion, 0);
-            transform.Translate(0, 0, y * Time.deltaTime * velMovimiento);
-            velMovimiento = 120f;
-            velRotacion = 200f;
-        }
+        Vector3 direction = rb.velocity;
+        direction.y = 0f;
 
-        if(Input.GetKeyDown(KeyCode.Q))
+        if(move.ReadValue<Vector2>().sqrMagnitude > 0.1f && direction.sqrMagnitude > 0.1f)
         {
-            animacion.SetTrigger("Tomar");
-            Tomar = true;
-        }
-
-        //Otros parametros
-        if (AvanzarSolo)
+            this.rb.rotation = Quaternion.LookRotation(direction, Vector3.up);
+        }            
+        
+        else
         {
-            rb.velocity = transform.forward * velDropeoTaker; 
+            rb.angularVelocity = Vector3.zero;
         }
-    }
+    }*/
 
     public void DejarDeTomar()
     {
@@ -96,60 +88,34 @@ public class AndroidController : MonoBehaviour
         AvanzarSolo = false;
     }
 
-    /*public void TomarResiduo()
+    public void Drop()
     {
-        //Boton de tomar
-        if (!Tomar)
-        {
-            transform.Rotate(0, x * Time.deltaTime * velRotacion, 0);
-            transform.Translate(0, 0, y * Time.deltaTime * velMovimiento);
-            velMovimiento = 60f;
-            velRotacion = 100f;
-        }
+        //transform.Rotate(0, x * Time.deltaTime * velRotacion, 0);
+        //transform.Translate(0, 0, y * Time.deltaTime * velMovimiento);
+        //velMovimiento = 120f;
+        //velRotacion = 200f;
+        move = player.right * x + player.forward * z;
+        controller.Move(move * velMovimiento * Time.deltaTime);
+        animacion.SetTrigger("Tomar");
+        Tomar = true;
+    }
 
-        if(Input.GetKeyDown(KeyCode.Q))
-        {
-            animacion.SetTrigger("Tomar");
-            Tomar = true;
-        }
-    }*/
-
-    void Take()
+    public void Take()
     {
-        /*Soltar = Input.GetButtonDown("ButtonD");
-        //Boton de tirar
-        if (!Soltar)
-        {
-            transform.Rotate(0, x * Time.deltaTime * velRotacion, 0);
-            transform.Translate(0, 0, y * Time.deltaTime * velMovimiento);
-            velMovimiento = 60f;
-            velRotacion = 100f;
-        }*/
-
-        if(Input.GetButtonDown("ButtonD"))
-        {
-            transform.Rotate(0, x * Time.deltaTime * velRotacion, 0);
-            transform.Translate(0, 0, y * Time.deltaTime * velMovimiento);
-            velMovimiento = 120f;
-            velRotacion = 200f;
-            move = player.right * x + player.forward * z;
-            controller.Move(move * velMovimiento * Time.deltaTime);
-            animacion.SetTrigger("Soltar");
-            Soltar = true;
-            Debug.Log("ButtonD");
-        }
-
-        /*if(Input.GetKeyDown(KeyCode.E))
-        {
-            animacion.SetTrigger("Soltar");
-            Soltar = true;
-        }*/
+        //transform.Rotate(0, x * Time.deltaTime * velRotacion, 0);
+        //transform.Translate(0, 0, y * Time.deltaTime * velMovimiento);
+        //velMovimiento = 120f;
+        //velRotacion = 200f;
+        move = player.right * x + player.forward * z;
+        controller.Move(move * velMovimiento * Time.deltaTime);
+        animacion.SetTrigger("Soltar");
+        Soltar = true;
     }
 
     // Update is called once per frame
     void Update()
     {
         Move();
-        Drop();
+        //LookAt();
     }
 }
