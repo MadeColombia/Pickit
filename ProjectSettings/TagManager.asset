@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Map
+  - Orga
+  - NoAprov
+  - Aprov
   layers:
   - Default
   - TransparentFX
