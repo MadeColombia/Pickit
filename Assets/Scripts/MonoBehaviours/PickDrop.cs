@@ -136,11 +136,11 @@ public class PickDrop : MonoBehaviour
     public void CheckPick()
     {
         isPressedPick = true;
-        Debug.Log("Pick fue presionado");
+        //Debug.Log("Pick fue presionado");
     }
     public void CheckDrop()
     {
         isPressedDrop = true;
-        Debug.Log("Drop fue presionado");
+        //Debug.Log("Drop fue presionado");
     }
 }
