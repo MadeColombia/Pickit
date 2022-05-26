@@ -526,6 +526,114 @@ Transform:
   m_Father: {fileID: 1639136972}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &109592009
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 109592010}
+  - component: {fileID: 109592013}
+  - component: {fileID: 109592012}
+  - component: {fileID: 109592011}
+  - component: {fileID: 109592014}
+  m_Layer: 0
+  m_Name: Hand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &109592010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109592009}
+  m_LocalRotation: {x: -0, y: 0.7267348, z: -0, w: 0.68691814}
+  m_LocalPosition: {x: 0.211, y: 0.64, z: 0.253}
+  m_LocalScale: {x: 0.017457902, y: 0.017457906, z: 0.017457902}
+  m_Children:
+  - {fileID: 1722470477}
+  m_Father: {fileID: 142413342}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &109592011
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109592009}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &109592012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109592009}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e05a878e4e928d04dbb24a1704367e5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  joystick: {fileID: 0}
+  Pointer: {fileID: 0}
+  controller: {fileID: 0}
+  animacion: {fileID: 0}
+  rb: {fileID: 0}
+  joystickMove: {fileID: 0}
+  joystickButtonD: {fileID: 0}
+  joystickButtonT: {fileID: 0}
+  velMovimiento: 120
+  velRotacion: 200
+  x: 0
+  z: 0
+  y: 0
+  player: {fileID: 0}
+  Soltar: 0
+  Tomar: 0
+  AvanzarSolo: 0
+  velDropeoTaker: 10
+  HandPoint: {fileID: 1722470476}
+--- !u!65 &109592013
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109592009}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 49.839153, y: 62.04915, z: 46.998077}
+  m_Center: {x: 12.119577, y: -5.8997264, z: -10.565842}
+--- !u!114 &109592014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109592009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 107f21d4f72fa9647a65040f7588d8da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HandPoint: {fileID: 1722470476}
 --- !u!1 &127700446
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,27 +713,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 481706889}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &142413343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 142413338}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0298e36123f5dd44b9786d9b477966f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velMovimiento: 60
-  velRotacion: 100
-  x: 0
-  y: 0
-  rb: {fileID: 0}
-  Soltar: 0
-  Tomar: 0
-  AvanzarSolo: 0
-  velDropeoTaker: 10
 --- !u!143 &142413344
 CharacterController:
   m_ObjectHideFlags: 0
@@ -651,26 +738,30 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142413338}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e05a878e4e928d04dbb24a1704367e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  joystick: {fileID: 1363349484}
+  Pointer: {fileID: 1803554181}
+  controller: {fileID: 142413344}
+  animacion: {fileID: 142413341}
+  rb: {fileID: 142413339}
   joystickMove: {fileID: 1363349484}
-  joystickButtonD: {fileID: 735945966}
-  joystickButtonT: {fileID: 738801194}
+  joystickButtonD: {fileID: 735945968}
+  joystickButtonT: {fileID: 738801196}
   velMovimiento: 300
   velRotacion: 200
   x: 0
   z: 0
   y: 0
-  rb: {fileID: 142413339}
   player: {fileID: 142413342}
-  controller: {fileID: 142413344}
   Soltar: 0
   Tomar: 0
   AvanzarSolo: 0
   velDropeoTaker: 10
+  HandPoint: {fileID: 0}
 --- !u!114 &142413346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -678,7 +769,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142413338}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4ce82fc9a6ed55b469a500a702961420, type: 3}
   m_Name: 
@@ -8701,6 +8792,36 @@ Transform:
   - {fileID: 1977027436}
   m_Father: {fileID: 844988934}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1722470476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1722470477}
+  m_Layer: 0
+  m_Name: HandPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1722470477
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722470476}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.5, y: -6.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 109592010}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1753602848
 GameObject:

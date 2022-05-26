@@ -27,7 +27,7 @@ public class AndroidController : MonoBehaviour
 
     public Joystick joystickMove;
     public Button joystickButtonD;
-    public GameObject joystickButtonT;
+    public Button joystickButtonT;
     public float velMovimiento = 120f;
     public float velRotacion = 200f;
     public float x, z, y; 
@@ -82,21 +82,7 @@ public class AndroidController : MonoBehaviour
         }
     }
 
-    /*private void LookAt()
-    {
-        Vector3 direction = rb.velocity;
-        direction.y = 0f;
-
-        if(move.ReadValue<Vector2>().sqrMagnitude > 0.1f && direction.sqrMagnitude > 0.1f)
-        {
-            this.rb.rotation = Quaternion.LookRotation(direction, Vector3.up);
-        }            
-        
-        else
-        {
-            rb.angularVelocity = Vector3.zero;
-        }
-    }*/
+ 
 
     public void DejarDeTomar()
     {
@@ -128,6 +114,8 @@ public class AndroidController : MonoBehaviour
         controller.Move(move * velMovimiento * Time.deltaTime);
         animacion.SetTrigger("Tomar");
         Tomar = true;
+
+  
     }
 
     public void Take()
@@ -147,9 +135,11 @@ public class AndroidController : MonoBehaviour
     {
         Move();
         //LookAt();
+        //recoger();
+
     }
 
-    /* private void OnTriggerStay(Collider other)
+    /*private void OnTriggerStay(Collider other)
     {
         if(other.gameObject.CompareTag("Orga"))
         {
@@ -162,5 +152,20 @@ public class AndroidController : MonoBehaviour
                 picketObject = other.gameObject;
             }
         }
-    } */
+    }
+
+    public void recoger()
+    {
+        if (picketObject != null)
+        {
+            if (Input.GetKey("r"))
+            {
+                picketObject.GetComponent<Rigidbody>().useGravity = true;
+                picketObject.GetComponent<Rigidbody>().isKinematic = false;
+                picketObject.gameObject.transform.SetParent(null);
+                picketObject = null;
+            }
+        }
+
+    }*/
 }
