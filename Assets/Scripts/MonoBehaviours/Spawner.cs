@@ -44,8 +44,7 @@ public class Spawner : MonoBehaviour
             Instantiate(objetos[randEnemy], spawnSpots[randPosition].position, Quaternion.identity);
 
             spawnSpots.Remove(spawnSpots[randPosition]);
-
-            
+            objetos.Remove(objetos[randEnemy]);
 
             yield return new WaitForSeconds(spawnWait);
         }
