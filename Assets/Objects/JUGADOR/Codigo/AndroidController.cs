@@ -25,6 +25,10 @@ public class AndroidController : MonoBehaviour
     public bool AvanzarSolo;
     public float velDropeoTaker = 10f;
 
+    //Variables coger residuos
+    public GameObject HandPoint;
+    private GameObject picketObject = null;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -118,4 +122,19 @@ public class AndroidController : MonoBehaviour
         Move();
         //LookAt();
     }
+
+    /* private void OnTriggerStay(Collider other)
+    {
+        if(other.gameObject.CompareTag("Orga"))
+        {
+            if(Input.GetKey("e") && picketObject==null)
+            {
+                other.GetComponent<Rigidbody>().useGravity = false;
+                other.GetComponent<Rigidbody>().isKinematic = true;
+                other.transform.position = HandPoint.transform.position;
+                other.gameObject.transform.SetParent(HandPoint.gameObject.transform);
+                picketObject = other.gameObject;
+            }
+        }
+    } */
 }
