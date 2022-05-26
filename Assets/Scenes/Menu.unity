@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1378,6 +1378,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1767115057}
+        m_TargetAssemblyTypeName: dataManager, Assembly-CSharp
+        m_MethodName: save
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1165573372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1713,7 +1725,7 @@ GameObject:
   - component: {fileID: 1343978813}
   - component: {fileID: 1343978812}
   m_Layer: 5
-  m_Name: InputField (TMP)
+  m_Name: inputField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2948,6 +2960,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1767115055}
   - component: {fileID: 1767115056}
+  - component: {fileID: 1767115057}
   m_Layer: 0
   m_Name: Nickname
   m_TagString: Untagged
@@ -2987,6 +3000,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50081690cede9fa488b41cb439f9b520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: {fileID: 0}
+  DataManager: {fileID: 0}
+--- !u!114 &1767115057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767115054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fbdd7553bdab434a934d3d63150bea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1810895960
