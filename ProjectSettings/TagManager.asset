@@ -8,6 +8,9 @@ TagManager:
   - Orga
   - NoAprov
   - Aprov
+  - verde
+  - blanco
+  - negro
   layers:
   - Default
   - TransparentFX
