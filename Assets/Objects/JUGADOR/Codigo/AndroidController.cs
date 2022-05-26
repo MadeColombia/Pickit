@@ -104,7 +104,7 @@ public class AndroidController : MonoBehaviour
         AvanzarSolo = false;
     }
 
-    public void Drop()
+    /*public void Drop()
     {
         //transform.Rotate(0, x * Time.deltaTime * velRotacion, 0);
         //transform.Translate(0, 0, y * Time.deltaTime * velMovimiento);
@@ -128,14 +128,13 @@ public class AndroidController : MonoBehaviour
         controller.Move(move * velMovimiento * Time.deltaTime);
         animacion.SetTrigger("Soltar");
         Soltar = true;
-    }
+    }*/
 
     // Update is called once per frame
     void Update()
     {
         Move();
-        //LookAt();
-        //recoger();
+        
 
     }
 
