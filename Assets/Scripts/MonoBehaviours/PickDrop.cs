@@ -26,24 +26,28 @@ public class PickDrop : MonoBehaviour
     public Transform player;
     public bool Soltar;
     public bool Tomar;
+    private bool isPressedPick;
+    private bool isPressedDrop;
     // Start is called before the first frame update
     void Start()
     {
-        
+        isPressedDrop = false;
+        isPressedPick = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         soltar();
+        
     }
 
     private void OnTriggerStay(Collider other)
     {
-
+        
         if (other.gameObject.CompareTag("Orga"))
         {
-            if (Input.GetKey("e") && picketObject == null)
+            if (isPressedPick != false && picketObject == null)
             {
                 Take();
                 other.GetComponent<Rigidbody>().useGravity = false;
@@ -51,11 +55,12 @@ public class PickDrop : MonoBehaviour
                 other.transform.position = HandPoint.transform.position;
                 other.gameObject.transform.SetParent(HandPoint.gameObject.transform);
                 picketObject = other.gameObject;
+                isPressedPick = false;
             }
         }
         else if (other.gameObject.CompareTag("Aprov"))
         {
-            if (Input.GetKey("e") && picketObject == null)
+            if (isPressedPick != false && picketObject == null)
             {
                 Take();
                 other.GetComponent<Rigidbody>().useGravity = false;
@@ -63,12 +68,13 @@ public class PickDrop : MonoBehaviour
                 other.transform.position = HandPoint.transform.position;
                 other.gameObject.transform.SetParent(HandPoint.gameObject.transform);
                 picketObject = other.gameObject;
+                isPressedPick = false;
             }
 
         }
         else if (other.gameObject.CompareTag("NoAprov"))
         {
-            if (Input.GetKey("e") && picketObject == null)
+            if (isPressedPick != false && picketObject == null)
             {
                 Take();
                 other.GetComponent<Rigidbody>().useGravity = false;
@@ -76,6 +82,7 @@ public class PickDrop : MonoBehaviour
                 other.transform.position = HandPoint.transform.position;
                 other.gameObject.transform.SetParent(HandPoint.gameObject.transform);
                 picketObject = other.gameObject;
+                isPressedPick = false;
             }
 
         }
@@ -87,13 +94,14 @@ public class PickDrop : MonoBehaviour
     {
         if (picketObject != null)
         {
-            if (Input.GetKey("r"))
+            if (isPressedDrop != false)
             {
                 Drop();
                 picketObject.GetComponent<Rigidbody>().useGravity = true;
                 picketObject.GetComponent<Rigidbody>().isKinematic = false;
                 picketObject.gameObject.transform.SetParent(null);
                 picketObject = null;
+                isPressedDrop = false;
             }
         }
 
@@ -123,5 +131,16 @@ public class PickDrop : MonoBehaviour
         controller.Move(move * velMovimiento * Time.deltaTime);
         animacion.SetTrigger("Soltar");
         Soltar = true;
+    }
+
+    public void CheckPick()
+    {
+        isPressedPick = true;
+        //Debug.Log("Pick fue presionado");
+    }
+    public void CheckDrop()
+    {
+        isPressedDrop = true;
+        //Debug.Log("Drop fue presionado");
     }
 }

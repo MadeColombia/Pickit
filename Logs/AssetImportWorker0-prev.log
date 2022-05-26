@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.29f1 (2ff179115da0) revision 3142009'; Using compiler version '192528614'; Build Type 'Release'
 OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'es' Physical Memory: 20361 MB
@@ -13795,3 +13796,5 @@ AssetImportParameters requested are different than current active one (requested
   custom:DOTSType/UnityEngine.UI.ScrollRect: 62cfaff9f3d4457062cfaff9f3d44570 -> 
   custom:DOTSType/UnityEditor.NavMeshObstacleInspector: e09ab8310b8a0334e09ab8310b8a0334 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+=======
+>>>>>>> 91be8a640b9b061a92662af7e1dbb270933ba2aa
