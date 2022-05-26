@@ -38,11 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-<<<<<<< HEAD
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
-=======
   m_IndirectSpecularColor: {r: 0.08976084, g: 0.072927654, b: 0.14560784, a: 1}
->>>>>>> 91be8a640b9b061a92662af7e1dbb270933ba2aa
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -640,13 +636,8 @@ MonoBehaviour:
   HandPoint: {fileID: 1722470476}
   animacion: {fileID: 142413341}
   controller: {fileID: 142413344}
-<<<<<<< HEAD
-  joystickButtonD: {fileID: 0}
-  joystickButtonT: {fileID: 0}
-=======
   joystickButtonD: {fileID: 735945968}
   joystickButtonT: {fileID: 738801196}
->>>>>>> 91be8a640b9b061a92662af7e1dbb270933ba2aa
   velMovimiento: 120
   x: 0
   z: 0
