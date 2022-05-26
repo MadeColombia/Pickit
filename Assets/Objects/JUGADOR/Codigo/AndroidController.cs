@@ -1,24 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AndroidController : MonoBehaviour
 {
-    public Joystick joystickMove;
-    public GameObject joystickButtonD;
-    public GameObject joystickButtonT;
 
+    [SerializeField]
+    Joystick joystick;
+
+    [SerializeField]
+    Transform Pointer;
+
+    [SerializeField]
+    CharacterController controller;
+
+    
+    Vector3 move;
+    Vector3 movement;
+    float velocity = 2f;
+    [SerializeField]
+    Animator animacion;
+
+    [SerializeField]
+    Rigidbody rb;
+
+    public Joystick joystickMove;
+    public Button joystickButtonD;
+    public GameObject joystickButtonT;
     public float velMovimiento = 120f;
     public float velRotacion = 200f;
-    private Animator animacion;
-    public float x, z, y;
-    Vector3 move;
+    public float x, z, y; 
     private Vector3 forceDirection = Vector3.zero;
-
-    public Rigidbody rb;
-
     public Transform player;
-    public CharacterController controller;
+    
 
     public bool Soltar;
     public bool Tomar;
@@ -37,22 +52,33 @@ public class AndroidController : MonoBehaviour
 
     void Move()
     {
-        //Movimiento del personaje
-        x = joystickMove.Horizontal + Input.GetAxis("Horizontal");
-        z = joystickMove.Vertical + Input.GetAxis("Vertical");
-        move = player.right * x + player.forward * z;
-        controller.Move(move * velMovimiento * Time.deltaTime);
+        x = joystick.Horizontal + Input.GetAxis("Horizontal");
+        z = joystick.Vertical + Input.GetAxis("Vertical");
 
-        transform.Rotate(0, x * Time.deltaTime * velRotacion, 0); //Rotacion con joystick esto es lo que estorba
-        transform.Translate(0, 0, z * Time.deltaTime * velMovimiento);
-        
-        animacion.SetFloat("velX", x);
-        animacion.SetFloat("velY", z);
+        Pointer.position = new Vector3(joystick.Horizontal + transform.position.x, 28f, joystick.Vertical + transform.position.z);
 
-        //Otros parametros
-        if (AvanzarSolo)
+        transform.LookAt(new Vector3(Pointer.position.x, 0, Pointer.position.z));
+
+        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
+
+        move = new Vector3(joystick.Horizontal + transform.position.z, 0, joystick.Vertical + transform.position.x);
+        movement = transform.rotation * -move;
+
+        if (joystick.Horizontal > 0 || joystick.Horizontal < 0 || joystick.Vertical > 0 || joystick.Vertical < 0)
         {
-            rb.velocity = transform.forward * velDropeoTaker; 
+
+            transform.Translate(Vector3.forward * 200f * Time.deltaTime);
+            controller.Move(movement * 0.4f * Time.deltaTime);
+            animacion.SetFloat("velX", x);
+            animacion.SetFloat("velY", Mathf.Abs(z));
+            rb.velocity = transform.forward * 10f;
+
+
+        }
+        else
+        {
+            animacion.SetFloat("velX", 0);
+            animacion.SetFloat("velY", 0);
         }
     }
 
