@@ -21,6 +21,10 @@ public class Puntaje : MonoBehaviour
 
     public void finale()
     {
+        /* PlayerPrefs.SetFloat("Puntos", puntos); */
+        string nickname = PlayerPrefs.GetString("Nickname");
+        int puntaje = (int)puntos;
+        HighScores.UploadScore(nickname, puntaje);
         PuntosFinal.text = puntos.ToString();
         CorrectoFinal.text = correctos.ToString();
         IncorrectoFinal.text = incorrectos.ToString();
