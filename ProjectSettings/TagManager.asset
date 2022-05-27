@@ -11,6 +11,7 @@ TagManager:
   - verde
   - blanco
   - negro
+  - points
   layers:
   - Default
   - TransparentFX

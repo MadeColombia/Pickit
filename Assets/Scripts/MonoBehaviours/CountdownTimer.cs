@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class CountdownTimer : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -10,10 +11,16 @@ public class CountdownTimer : MonoBehaviour
     public float TimeLeft;
     bool timerOn = false;
 
+    [SerializeField]
+    public GameObject finish;
+
     [SerializeField] Text timer;
+
+    [SerializeField]Puntaje puntaje;
     void Start()
     {
         timerOn = true;
+        puntaje = GameObject.FindGameObjectWithTag("points").GetComponent<Puntaje>();
         
     }
 
@@ -31,7 +38,10 @@ public class CountdownTimer : MonoBehaviour
             else
             {
                 TimeLeft = 0;
+                Time.timeScale = 0f;
                 timerOn = false;
+                puntaje.finale();
+                finish.SetActive(true);
             }
 
 

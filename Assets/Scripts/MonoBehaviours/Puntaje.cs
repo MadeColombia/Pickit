@@ -6,11 +6,24 @@ using UnityEngine.UI;
 public class Puntaje : MonoBehaviour
 {
     public float puntos;
+    public float correctos;
+    public float incorrectos;
     public Text textP;
+    public Text PuntosFinal;
+    public Text IncorrectoFinal;
+    public Text CorrectoFinal;
 
     // Update is called once per frame
     void Update()
     {
         textP.text = puntos.ToString();
+    }
+
+    public void finale()
+    {
+        PuntosFinal.text = puntos.ToString();
+        CorrectoFinal.text = correctos.ToString();
+        IncorrectoFinal.text = incorrectos.ToString();
+
     }
 }
